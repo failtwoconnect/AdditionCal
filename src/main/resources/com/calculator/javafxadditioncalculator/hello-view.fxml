@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.calculator.javafxadditioncalculator.HelloController">
+      <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="190.0" text="First Number" />
+            <TextField prefWidth="149.0" promptText=" 1st Number" fx:id="firstNumberTextField">
+               <HBox.margin>
+                  <Insets top="40.0" />
+               </HBox.margin></TextField>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="190.0" text="2nd Number" />
+            <TextField promptText="2nd Number" fx:id="secondNumberTextField">
+               <HBox.margin>
+                  <Insets top="35.0" />
+               </HBox.margin></TextField>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="190.0" text="Answer" />
+            <TextField fx:id="answerTextField" disable="true">
+               <HBox.margin>
+                  <Insets top="40.0" />
+               </HBox.margin></TextField>
+      </HBox>
+      <Button alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="364.0" text="Button" textAlignment="CENTER" fx:id="submitButton" onAction="#submitAnswer">
+         <VBox.margin>
+            <Insets left="60.0" />
+         </VBox.margin></Button>
+</VBox>
